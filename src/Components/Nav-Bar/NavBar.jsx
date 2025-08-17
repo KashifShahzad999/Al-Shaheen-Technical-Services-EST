@@ -1,82 +1,67 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./Navbar.css";
 
-const NavigationBar = () => {
+export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg" className="shadow-sm">
+    <Navbar expand="lg" bg="light" variant="light" className="shadow-sm">
       <Container>
-        {/* Logo */}
         <Navbar.Brand as={NavLink} to="/home">
-          <img
-            src="/assets/img/logo.jpg" // <-- update to your logo path
-            alt="Al Shaheen Logo"
-            style={{ height: "50px" }}
-          />
+          Al Shaheen
         </Navbar.Brand>
-
-        {/* Toggle for mobile */}
-        <Navbar.Toggle aria-controls="main-navbar" />
-
-        {/* Nav Links */}
-        <Navbar.Collapse id="main-navbar">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
 
-            {/* Dropdown */}
-            <NavDropdown
-              title="Services"
-              id="services-dropdown"
-              className="nav-dropdown-custom"
+            <NavLink 
+              to="/home" 
+              className={({ isActive }) => 
+                isActive ? "nav-link active nav-custom" : "nav-link nav-custom"
+              }
             >
-              <NavDropdown.Item as={NavLink} to="/services/aluminium-window">
-                Aluminium Window
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/doors-works">
-                Doors Works
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/frameless-glass-doors">
-                Frameless Glass Doors
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/partition-works">
-                Partition Works
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/curtain-wall">
-                Curtain Wall
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/aluminium-works">
-                Aluminium Works
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/shower-enclosure">
-                Aluminium Shower Enclosure Works
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/wood-pergolas">
-                Aluminium Wood Pergolas
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/panel-cladding">
-                Aluminum Composite Panel Cladding
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/stainless-steel">
-                Stainless Steel
-              </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services/electroplating-steel-work">
-                Electroplating Stainless Steel Work
-              </NavDropdown.Item>
-            </NavDropdown>
+              Home
+            </NavLink>
 
-            {/* Normal Nav Links */}
-            
-            <Nav.Link as={NavLink} to="/about" className="nav-custom">
+            <NavLink 
+              to="/services" 
+              className={({ isActive }) => 
+                isActive ? "nav-link active nav-custom" : "nav-link nav-custom"
+              }
+            >
+              Services
+            </NavLink>
+
+            <NavLink 
+              to="/categories" 
+              className={({ isActive }) => 
+                isActive ? "nav-link active nav-custom" : "nav-link nav-custom"
+              }
+            >
+              Categories
+            </NavLink>
+
+            <NavLink 
+              to="/about" 
+              className={({ isActive }) => 
+                isActive ? "nav-link active nav-custom" : "nav-link nav-custom"
+              }
+            >
               About
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="nav-custom">
+            </NavLink>
+
+            <NavLink 
+              to="/contact" 
+              className={({ isActive }) => 
+                isActive ? "nav-link active nav-custom" : "nav-link nav-custom"
+              }
+            >
               Contact
-            </Nav.Link>
+            </NavLink>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-};
-
-export default NavigationBar;
+}
