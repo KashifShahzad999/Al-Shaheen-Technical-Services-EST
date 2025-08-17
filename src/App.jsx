@@ -16,20 +16,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/about" element={<About/>} />
-          {/* Uncomment if you import them */}
-          {/* <Route path="/art" element={<Art />} /> */}
-          {/* <Route path="/drama" element={<Drama />} /> */}
-          {/* <Route path="/music" element={<Music />} /> */}
-        </Routes>
-      </Router>
+      {/* <NavBar /> */}
+      <Home />
+      <Services />
+      <Categories />
+      <About />
+      <Contact />
     </>
   );
 }
