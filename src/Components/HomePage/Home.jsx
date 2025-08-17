@@ -25,7 +25,7 @@ function Home() {
           {/* Right Column */}
           <div className="col-lg-6 text-center">
             <img
-              src="/assets/img/technical-services.webp"
+              src="/assets/img/home1.webp"
               alt="Technical Services"
               className="img-fluid"
             />

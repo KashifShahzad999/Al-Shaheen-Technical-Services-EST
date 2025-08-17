@@ -45,7 +45,7 @@ const AboutUs = () => {
             {/* Vision Image */}
             <div className="col-md-6 text-center mb-3 mb-md-0">
               <img
-                src="/assets/img/Our-Vision-1.webp"
+                src="/assets/img/Our-Vision.webp"
                 alt="Tools"
                 className="img-fluid rounded"
               />

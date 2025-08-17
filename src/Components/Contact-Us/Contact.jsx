@@ -91,7 +91,7 @@ function Contact() {
 
               <div className="col-md-6 text-center mb-4 mb-md-0">
             <img
-              src="/assets/img/AlShahin-contact.png"
+              src="/assets/img/contact-us.png"
               alt="Contact Us"
               className="img-fluid rounded"
             />

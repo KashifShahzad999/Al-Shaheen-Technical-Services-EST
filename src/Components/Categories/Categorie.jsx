@@ -29,7 +29,7 @@ function categorie() {
               {/* Image Column */}
               <div className="col-lg-6 col-md-6 text-center">
                 <img
-                  src="/assets/img/Aluminium-Windows.jpg"
+                  src="/assets/img/Aluminium-Window.jpeg"
                   alt="Aluminium Windows"
                   className="img-fluid rounded"
                 />
@@ -45,7 +45,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 mb-4 mb-lg-0 text-center">
               <img
-                src="/assets/img/Glass-Door.webp"
+                src="/assets/img/Glass-Doors.webp"
                 alt="Glass Door"
                 className="img-fluid rounded"
               />
@@ -116,7 +116,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center">
               <img
-                src="/assets/img/Frameless-Glass2.jpg"
+                src="/assets/img/Frameless-Glass-Door.jpeg"
                 alt="Frameless Glass Door"
                 className="img-fluid rounded"
               />
@@ -131,7 +131,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center mb-4 mb-lg-0">
               <img
-                src="/assets/img/GlassPartitionWork.webp"
+                src="/assets/img/Glass-Partition-Works.jpeg"
                 alt="Glass Partition"
                 className="img-fluid rounded"
               />
@@ -220,7 +220,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center">
               <img
-                src="/assets/img/Curtain-Wall2.jpg"
+                src="/assets/img/curtainwall-1.webp"
                 alt="Curtain Wall"
                 className="img-fluid rounded"
               />
@@ -235,7 +235,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center">
               <img
-                src="/assets/img/Aluminum-Shower2.jpg"
+                src="/assets/img/Shower-Enclosure.jpeg"
                 alt="Shower Enclosure"
                 className="img-fluid rounded"
               />
@@ -335,7 +335,7 @@ function categorie() {
             {/* Image Section */}
             <div className="col-lg-4 text-center">
               <img
-                src="/assets/img/Wood-Pergola2.jpg"
+                src="/assets/img/Aluminum-Pergola.jpeg"
                 alt="Wood Pergola"
                 className="img-fluid rounded"
               />
@@ -350,7 +350,7 @@ function categorie() {
             {/* Image Section */}
             <div className="col-lg-4 text-center mb-3 mb-lg-0">
               <img
-                src="/assets/img/CompositePanelCladding.jpg"
+                src="/assets/img/Composite-Panel-Cladding.avif"
                 alt="Composite Cladding"
                 className="img-fluid rounded"
               />
@@ -455,7 +455,7 @@ function categorie() {
             {/* Image Section */}
             <div className="col-lg-4 text-center bg-light">
               <img
-                src="/assets/img/stainless-steel.jpg"
+                src="/assets/img/Stainless-Steel-scaled.jpeg"
                 alt="stainless steel"
                 className="img-fluid rounded"
               />
@@ -470,7 +470,7 @@ function categorie() {
             {/* Image Section */}
             <div className="col-lg-4 text-center mb-3 mb-lg-0">
               <img
-                src="/assets/img/Steel-wall-partition2.jpg"
+                src="/assets/img/Electroplating-StainlessSteel-Wall-Partition.webp"
                 alt="Electroplating partition"
                 className="img-fluid rounded"
               />

@@ -80,7 +80,7 @@ const Services = () => {
             {/* Feature 1 */}
             <div className="col-md-6 col-lg-3 feature-item">
               <img
-                src="/assets/img/Like-img2.jpg"
+                src="/assets/img/service-team.png"
                 alt="Quality Material"
                 className="img-fluid mb-2"
               />
@@ -94,7 +94,7 @@ const Services = () => {
             {/* Feature 2 */}
             <div className="col-md-6 col-lg-3 feature-item">
               <img
-                src="/assets/img/Like-img2.jpg"
+                src="/assets/img/service-team.png"
                 alt="Expert Team"
                 className="img-fluid mb-2"
               />
@@ -108,7 +108,7 @@ const Services = () => {
             {/* Feature 3 - Center Image */}
             <div className="col-md-12 col-lg-6">
               <img
-                src="/assets/img/services-img.jpg"
+                src="/assets/img/services-img.webp"
                 alt="Worker"
                 className="img-fluid rounded"
               />
@@ -117,7 +117,7 @@ const Services = () => {
             {/* Feature 4 */}
             <div className="col-md-6 col-lg-3 feature-item">
               <img
-                src="/assets/img/Like-img2.jpg"
+                src="/assets/img/service-team.png"
                 alt="Reasonable Cost"
                 className="img-fluid mb-2"
               />
@@ -131,7 +131,7 @@ const Services = () => {
             {/* Feature 5 */}
             <div className="col-md-6 col-lg-3 feature-item">
               <img
-                src="/assets/img/Like-img2.jpg"
+                src="/assets/img/service-team.png"
                 alt="Secure & Safe"
                 className="img-fluid mb-2"
               />
