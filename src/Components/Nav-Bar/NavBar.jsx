@@ -1,43 +1,82 @@
-import React, { useState } from "react";
-import "./Navbar.css"; // we'll add styles next
+import React from "react";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
+const NavigationBar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">Green Valley School</div>
-      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
-      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+    <Navbar bg="light" expand="lg" className="shadow-sm">
+      <Container>
+        {/* Logo */}
+        <Navbar.Brand as={NavLink} to="/home">
+          <img
+            src="/assets/img/logo.jpg" // <-- update to your logo path
+            alt="Al Shaheen Logo"
+            style={{ height: "50px" }}
+          />
+        </Navbar.Brand>
 
-        <li
-          className="dropdown"
-          onMouseEnter={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
-        >
-          <a href="#">
-            Departments ▼
-          </a>
-          {dropdownOpen && (
-            <div className="dropdown-content">
-              <a href="#">Science</a>
-              <a href="#">Mathematics</a>
-              <a href="#">Arts</a>
-              <a href="#">Sports</a>
-            </div>
-          )}
-        </li>
+        {/* Toggle for mobile */}
+        <Navbar.Toggle aria-controls="main-navbar" />
 
-        <li><a href="#">Admissions</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        {/* Nav Links */}
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto">
+
+            {/* Dropdown */}
+            <NavDropdown
+              title="Services"
+              id="services-dropdown"
+              className="nav-dropdown-custom"
+            >
+              <NavDropdown.Item as={NavLink} to="/services/aluminium-window">
+                Aluminium Window
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/doors-works">
+                Doors Works
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/frameless-glass-doors">
+                Frameless Glass Doors
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/partition-works">
+                Partition Works
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/curtain-wall">
+                Curtain Wall
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/aluminium-works">
+                Aluminium Works
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/shower-enclosure">
+                Aluminium Shower Enclosure Works
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/wood-pergolas">
+                Aluminium Wood Pergolas
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/panel-cladding">
+                Aluminum Composite Panel Cladding
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/stainless-steel">
+                Stainless Steel
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/services/electroplating-steel-work">
+                Electroplating Stainless Steel Work
+              </NavDropdown.Item>
+            </NavDropdown>
+
+            {/* Normal Nav Links */}
+            
+            <Nav.Link as={NavLink} to="/about" className="nav-custom">
+              About
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" className="nav-custom">
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavigationBar;
