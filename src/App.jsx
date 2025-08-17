@@ -22,8 +22,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/about" element={<About/>} />
           {/* Uncomment if you import them */}
           {/* <Route path="/art" element={<Art />} /> */}
           {/* <Route path="/drama" element={<Drama />} /> */}
