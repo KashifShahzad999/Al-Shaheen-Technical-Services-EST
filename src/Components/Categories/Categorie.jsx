@@ -29,7 +29,7 @@ function categorie() {
               {/* Image Column */}
               <div className="col-lg-6 col-md-6 text-center">
                 <img
-                  src="/assets/img/Aluminium-Window.jpeg"
+                  src="/assets/img/AluminiumWindow.jpg"
                   alt="Aluminium Windows"
                   className="img-fluid rounded"
                 />
@@ -45,7 +45,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 mb-4 mb-lg-0 text-center">
               <img
-                src="/assets/img/Glass-Doors.webp"
+                src="/assets/img/im33.avif"
                 alt="Glass Door"
                 className="img-fluid rounded"
               />
@@ -116,7 +116,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center">
               <img
-                src="/assets/img/Frameless-Glass-Door.jpeg"
+                src="/assets/img/img44.jpg"
                 alt="Frameless Glass Door"
                 className="img-fluid rounded"
               />
@@ -131,7 +131,7 @@ function categorie() {
             {/* Image Column */}
             <div className="col-lg-4 text-center mb-4 mb-lg-0">
               <img
-                src="/assets/img/Glass-Partition-Works.jpeg"
+                src="/assets/img/img55.webp"
                 alt="Glass Partition"
                 className="img-fluid rounded"
               />
